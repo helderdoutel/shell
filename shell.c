@@ -28,8 +28,10 @@ char ** dividir_linha(char * linha){
     return argumentos;
  }
 
- void funcao_cd(char * caminho){
-
+ int funcao_cd(char * caminho){
+     int ret;
+     ret = chdir(caminho);
+     return ret;
  }
 
  void limpar_linha(char * linha){
